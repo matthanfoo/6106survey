@@ -1,0 +1,110 @@
+h1, h2{
+  text-align: center;
+  background-color: #99c3ee;
+  width: 100%;
+  border-radius: 10px;
+  line-height: 2.0;
+  margin: 10px 0px;
+}
+@media (max-width: 480px){
+  h1{
+    font-size:22px
+  }
+  
+}
+
+h2{
+  background-color:#b57edc;
+  line-height: 1.8
+  
+}
+.sect1{
+  line-height: 1.8
+}
+.q1,.q2,.q3,.q4{
+  padding: 15px;
+  margin: 2px;
+  background-color: #ADD8E6;
+  border-radius: 10px;
+}
+button{
+  width: 20%;
+  background-color: blue;
+  border-radius: 7px;
+  color:white
+}
+h4,h5{
+  background-color: #e0b0ff;
+  font-weight: bold;
+  margin: 10px 0px;
+  padding: 5px;
+  line-height:1.5;
+  border-radius: 10px;
+}
+h4{
+  text-align: center;
+  font-size: 15px
+}
+
+.sect2{
+  line-height:1
+}
+audio{
+  width:70%
+}
+
+.ac1,.ac2,.ac3,.ac4,.ac5,.ac6,.ac7,.ac8{
+  padding: 2px 15px 15px;
+  margin: 2px;
+  background-color: #ADD8E6;
+  border-radius: 10px;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 70%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 12px; /* Set a specific slider handle width */
+  height: 12px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  font-size: 11px;
+
+}
+

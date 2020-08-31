@@ -1,0 +1,499 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>  
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <h1>Survey on Accent Perspectives</h1>
+  
+  <form>
+    <div class="sect1">
+   <h2>Information Questions</h2>
+  <div class="q1">
+  <label for="school">School:</label>
+  <input type="text" id="school" name="school"><br>
+    </div>
+  
+  <div class="q2">  
+  <label for="stream">Stream:</label>
+<br>
+   <input type="radio" class="str" id="IP" name="stream" value="IP">
+  <label for="IP">IP</label><br>
+  
+    <input type="radio" class="str" id="JC/IB" name="stream" value="JC/IB">
+  <label for="JC/IB">JC/IB</label><br>
+    
+  <input type="radio"  class="str" id="Polytechnic" name="stream" value="Polytechnic">
+  <label for="Polytechnic">Polytechnic</label><br>
+  
+  <input type="radio" class="str" id="ITE" name="stream" value="ITE">
+  <label for="ITE">ITE</label><br>
+ 
+    </div>
+    
+    <div class="q3">
+      
+      
+    
+<label for="homelang">Primary Language Spoken at Home:</label>
+<br>
+    <input type="radio" class="plhome" id="English" name="homelang" value="English">
+  <label for="English">English</label><br>
+    
+    <input type="radio" class="plhome" id="Chinese" name="homelang" value="Chinese">
+  <label for="Chinese">Chinese</label><br>
+    
+     <input type="radio" class="plhome" id="Malay" name="homelang" value="Malay">
+  <label for="Malay">Malay</label><br>
+    
+     <input type="radio"  class="plhome"id="Tamil" name="homelang" value="Tamil">
+  <label for="Tamil">Tamil</label><br>
+       <input type="radio"  class="plhome" id="Others" name="homelang" value="Others">
+      <label for="Others">Others</label>
+
+  <input type="text"  class="plhome" id="Othersans" name="Others"><br>
+      
+      </div>
+    
+    <div class="q4">
+   <label for="schlang">Primary Language Spoken in School:</label>
+<br>
+    <input type="radio" id="English" class="plsch" name="schlang" value="English">
+  <label for="English">English</label><br>
+    
+    <input type="radio" id="Chinese"  class="plsch" name="schlang" value="Chinese">
+  <label for="Chinese">Chinese</label><br>
+    
+     <input type="radio" id="Malay" class="plsch" name="schlang" value="Malay">
+  <label for="Malay">Malay</label><br>
+    
+     <input type="radio" id="Tamil" class="plsch" name="schlang" value="Tamil">
+  <label for="Tamil">Tamil</label><br>
+       <input type="radio" id="Others" class="plsch" name="schlang" value="Others">
+      <label for="Others">Others</label>
+  <input type="text" id="Othersans2" class="plsch" name="Others"><br>
+    </div>
+    </div> 
+      
+<div class="sect2"> 
+    <h2>Questions</h2> 
+    <h4>In the following section, you will be asked to evaluate each accent based on the three factors below after listening to the audio clip</h4>
+    <h5>Credibility – how likely you are to trust/believe a person that uses the accent<br> 
+        Pleasantness – how desirable/pleasant the accent sounds<br>
+        Accuracy – how correct/accurate the accent sounds
+    </h5>
+    
+    <div class="ac1">
+      <p> Audio Clip 1 </p>  
+      
+    <!--  <audio controls>
+  <source src="https://clyp.it/httfjztk" > -->
+      <iframe width="100%" height="150" src="https://clyp.it/httfjztk/widget" frameborder="0"></iframe>
+ 
+      
+      <div class="aef1">
+       <p> Credibility </p>  
+       <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="1" class="slider" id="myRange1.1">
+        </div>
+    
+    <div class="flex-container">
+  <div>Not credible</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely credible</div>
+</div>
+      </div>
+      
+       <div class="aef2">
+      <p> Pleasantness </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange1.2">
+</div>
+    
+    <div class="flex-container">
+  <div>Unpleasant</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely pleasant</div>
+</div>
+      </div>
+      
+    <div class="aef3">
+      <p> Accuracy </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange1.3">
+</div>
+    
+    <div class="flex-container">
+  <div>Inaccurate</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Very accurate</div>
+</div>
+      </div>
+  
+    </div class="ac1">
+    
+    <div class="ac2">
+      <p> Audio Clip 2 </p>  
+      
+     <iframe width="100%" height="150" src="https://clyp.it/mb4olaof/widget" frameborder="0"></iframe>
+ 
+      </audio>
+      <div class="aef1">
+      <p> Credibility </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange2.1">
+</div>
+    
+    <div class="flex-container">
+  <div>Not credible</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely credible</div>
+</div>
+      </div>
+      
+       <div class="aef2">
+      <p> Pleasantness </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange2.2">
+</div>
+    
+    <div class="flex-container">
+  <div>Unpleasant</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely pleasant</div>
+</div>
+      </div>
+      
+    <div class="aef3">
+      <p> Accuracy </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange2.3">
+</div>
+    
+    <div class="flex-container">
+  <div>Inaccurate</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Very accurate</div>
+</div>
+      </div>
+
+</div class="ac2">
+
+      <div class="ac3">
+      <p> Audio Clip 3 </p>  
+      
+    <!--  <audio controls>
+  <source src="https://clyp.it/httfjztk" > -->
+    <iframe width="100%" height="150" src="https://clyp.it/homk0ugp/widget" frameborder="0"></iframe>
+ 
+      </audio>
+      <div class="aef1">
+      <p> Credibility </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange3.1">
+</div>
+    
+    <div class="flex-container">
+  <div>Not credible</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely credible</div>
+</div>
+      </div>
+      
+       <div class="aef2">
+      <p> Pleasantness </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange3.2">
+</div>
+    
+    <div class="flex-container">
+  <div>Unpleasant</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely pleasant</div>
+</div>
+      </div>
+      
+    <div class="aef3">
+      <p> Accuracy </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange3.3">
+</div>
+    
+    <div class="flex-container">
+  <div>Inaccurate</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Very accurate</div>
+</div>
+      </div>
+    </div class="ac3"> 
+
+
+
+    <div class="ac4">
+      <p> Audio Clip 4 </p>  
+      
+    <!--  <audio controls>
+  <source src="https://clyp.it/httfjztk" > -->
+    <iframe width="100%" height="150" src="https://clyp.it/atbla2ip/widget" frameborder="0"></iframe>
+ 
+      </audio>
+      <div class="aef1">
+      <p> Credibility </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange4.1">
+</div>
+    
+    <div class="flex-container">
+  <div>Not credible</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely credible</div>
+</div>
+      </div>
+      
+       <div class="aef2">
+      <p> Pleasantness </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange4.2">
+</div>
+    
+    <div class="flex-container">
+  <div>Unpleasant</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely pleasant</div>
+</div>
+      </div>
+      
+    <div class="aef3">
+      <p> Accuracy </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange4.3">
+</div>
+    
+    <div class="flex-container">
+  <div>Inaccurate</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Very accurate</div>
+</div>
+      </div>
+  
+    </div class="ac4"> 
+  
+
+
+
+  <div class="ac5">
+      <p> Audio Clip 5 </p>  
+      
+    <!--  <audio controls>
+  <source src="https://clyp.it/httfjztk" > -->
+   <iframe width="100%" height="150" src="https://clyp.it/c35gih1z/widget" frameborder="0"></iframe>
+ 
+      </audio>
+      <div class="aef1">
+      <p> Credibility </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange5.1">
+</div>
+    
+    <div class="flex-container">
+  <div>Not credible</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely credible</div>
+</div>
+      </div>
+      
+       <div class="aef2">
+      <p> Pleasantness </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange5.2">
+</div>
+    
+    <div class="flex-container">
+  <div>Unpleasant</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely pleasant</div>
+</div>
+      </div>
+      
+    <div class="aef3">
+      <p> Accuracy </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange5.3">
+</div>
+    
+    <div class="flex-container">
+  <div>Inaccurate</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Very accurate</div>
+</div>
+      </div>
+  
+    </div class="ac5"> 
+
+
+
+<div class="ac6">
+      <p> Audio Clip 6 </p>  
+      
+    <!--  <audio controls>
+  <source src="https://clyp.it/httfjztk" > -->
+  <iframe width="100%" height="150" src="https://clyp.it/1hcqsyoq/widget" frameborder="0"></iframe>
+ 
+      </audio>
+      <div class="aef1">
+      <p> Credibility </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange6.1">
+</div>
+    
+    <div class="flex-container">
+  <div>Not credible</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely credible</div>
+</div>
+      </div>
+      
+       <div class="aef2">
+      <p> Pleasantness </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange6.2">
+</div>
+    
+    <div class="flex-container">
+  <div>Unpleasant</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely pleasant</div>
+</div>
+      </div>
+      
+    <div class="aef3">
+      <p> Accuracy </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange6.3">
+</div>
+    
+    <div class="flex-container">
+  <div>Inaccurate</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Very accurate</div>
+</div>
+      </div>
+  
+    </div class="ac6"> 
+
+
+
+<div class="ac7">
+      <p> Audio Clip 7 </p>  
+      
+    <!--  <audio controls>
+  <source src="https://clyp.it/httfjztk" > -->
+  <iframe width="100%" height="150" src="https://clyp.it/qypa4v2b/widget" frameborder="0"></iframe>
+ 
+      </audio>
+      <div class="aef1">
+      <p> Credibility </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange7.1">
+</div>
+    
+    <div class="flex-container">
+  <div>Not credible</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely credible</div>
+</div>
+      </div>
+      
+       <div class="aef2">
+      <p> Pleasantness </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange7.2">
+</div>
+    
+    <div class="flex-container">
+  <div>Unpleasant</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Extremely pleasant</div>
+</div>
+      </div>
+      
+    <div class="aef3">
+      <p> Accuracy </p>  
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="1" class="slider" id="myRange7.3">
+</div>
+    
+    <div class="flex-container">
+  <div>Inaccurate</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>Very accurate</div>
+</div>
+      </div>
+  
+    </div class="ac7"> 
+
+
+
+    
+    </div>
+    
+<!--   <input id='foo' class="submit" type="submit" value="Submit" target="_blank"> -->
+    <button type='button' id='foo'>submit</button> 
+  </form> 
+
+  <script src="script.js"></script>
+</body>
+</html>
