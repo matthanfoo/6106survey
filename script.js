@@ -19,40 +19,40 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	    string += stream + "\n"
 
 
-	    let ele2 = document.getElementsByClassName('plhome');
+	    let ele2 = document.getElementsByClassName('race');
 	  ;
-	    var plhome
+	    var race
 	    for(let i=0; i<ele2.length; i++){
 	      if (ele2[i].checked){
 	        // console.log(ele2[i].value)
-	        plhome = ele2[i].value
+	        race = ele2[i].value
 
 	        if (ele2[4].checked){
 	        // console.log("others value: " + document.getElementById('Othersans').value)
-	        plhome += "(" + document.getElementById('Othersans').value + ")"
+	        race += "(" + document.getElementById('Othersans').value + ")"
 	        }
 	        
 	    }
 		}
-		string += "plhome: " + plhome + "\n"
+		string += "race: " + race + "\n"
 
 
 
-		let ele3 = document.getElementsByClassName('plsch');
-	  ;
-	    var plsch
-	    for(let i=0; i<ele3.length; i++){
-	      if (ele3[i].checked){
-	        // console.log(ele3[i].value)
-	        plsch = ele2[i].value
+	// 	let ele3 = document.getElementsByClassName('plsch');
+	//   ;
+	//     var plsch
+	//     for(let i=0; i<ele3.length; i++){
+	//       if (ele3[i].checked){
+	//         // console.log(ele3[i].value)
+	//         plsch = ele2[i].value
 
-	        if (ele3[4].checked){
-	        // console.log("others value: " + document.getElementById('Othersans2').value)
-	        plsch += "(" + document.getElementById('Othersans2').value + ")"
-	        }
-	    }
-	}
-	      string += "plsch: " + plsch + "\n"
+	//         if (ele3[4].checked){
+	//         // console.log("others value: " + document.getElementById('Othersans2').value)
+	//         plsch += "(" + document.getElementById('Othersans2').value + ")"
+	//         }
+	//     }
+	// }
+	//       string += "plsch: " + plsch + "\n"
 
 		
 // 		var slider = document.getElementById("myRange1.1");
@@ -134,18 +134,18 @@ errormsg += "Stream \n"
  			}}
         if (clickcount2 == 6){
 inputcheck = false
-errormsg += "Primary Language Spoken at Home \n"
+errormsg += "Race \n"
         }
 
-        var clickcount3 = 0
-        for(let i=0; i<ele3.length; i++){
- 			if(ele3[i].checked ==  false){
- 				clickcount3 += 1
- 			}}
-        if (clickcount3 == 6){
-inputcheck = false
-errormsg += "Primary Language Spoken in School \n"
-        }
+//         var clickcount3 = 0
+//         for(let i=0; i<ele3.length; i++){
+//  			if(ele3[i].checked ==  false){
+//  				clickcount3 += 1
+//  			}}
+//         if (clickcount3 == 6){
+// inputcheck = false
+// errormsg += "Primary Language Spoken in School \n"
+//         }
         
 
 
