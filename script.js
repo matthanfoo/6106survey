@@ -226,7 +226,7 @@ if(inputcheck) {
 		Body : string,
 		}).then(
 		    
-			alert("mail sent successfully")
+			alert("Your response has been recorded")
 		);
         	
 
